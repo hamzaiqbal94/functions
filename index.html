@@ -3,48 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SS 2023</title>
-    <link rel="stylesheet" href="style.css"/>
-<hr>
+    <title>Are.na</title>
+    <link href="assets/reset.css" rel="stylesheet">
+		<link href="assets/style.css" rel="stylesheet">
+		<script defer src="assets/arena.js"></script>
+		<script defer src="assets/main.js"></script>
 
-<h1>
-    Dynamic Moodboard
-</h1>
-<hr>
-
-
-<h2>Camera Angles</h2>
-
-<div id="images">
-    <img src="1.jpg">
-    <img src="2.jpg">
-    <img src="3.jpg">
-    <img src="4.jpg">
-    <img src="5.jpg">
-    <img src="6.jpg">
-    </div>
-<hr>
-<h2>Choreography</h2>
-<hr>
-
-<div id="images">
-    <img src="1.jpg">
-    <img src="2.jpg">
-    <img src="3.jpg">
-    <img src="4.jpg">
-    <img src="5.jpg">
-    <img src="6.jpg">
-    </div>
-
-
-
-    <link href="assets/style.css" rel="stylesheet">
-    <script defer src="assets/shopify.js"></script>
-	<script defer src="assets/main.js"></script>
-
-
-</head>
+<h4>ITALY ANDIAMO</h4>
+	</head>
 <body>
-    
+    <section>
+        <header>
+			<a href="https://www.are.na/hamza-iqbal-ktujd8e3wzy/lighting-cvembxqfcri" id="channel-url">
+				<h1 class="channel-title"></h1>
+			</a>
+		</header>
+    </section>
+    <section>
+        <!-- All the channel “blocks” will be created as children, here. -->
+        <!-- You could move the classes to different section elements to separate the types! -->
+        <ul class="image-blocks">
+        </ul>
+    </section>
+    <!-- Images. -->
+		<template id="image-block">
+			<li class="background">
+				<figure class="image-block">
+					<picture>
+						<source class="image-thumb">
+						<source class="image-square">
+						<source class="image-display">
+						<img class="image">
+					</picture>
+				</figure>
+			</li>
+		</template>
+        <!-- Text. -->
+		<template id="text-block">
+			<li>
+				<figure class="text-block">
+					<h3 class="title"></h3>
+					<div class="content"></div> <!-- Text blocks insert their HTML here. -->
+					<figcaption class="description"></figcaption>
+					<p class="type"></p>
+					<p class="time-updated"></p>
+					<p class="time-created"></p>
+				</figure>
+			</li>
+		</template>
+       
 </body>
 </html>

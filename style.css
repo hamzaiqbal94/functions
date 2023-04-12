@@ -1,33 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:wght@100;300;400&display=swap');
+
 body{
     font-family: font-family: 'Lato', sans-serif;
     font-weight: 400;
-    color: black;
-    padding: 20px;
+    color: #ffffff ;
+    padding: 40px;
 
 }
 
 h1{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: large;
-  text-align: center;
+    display: none;
 }
 
-h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+header{
+    font-family: font-family: 'Lato', sans-serif;
+    font-size: 250;
+    color: #CD212A;
 
-}
-
-images{
-    border-radius: 30px;
 }
 
 
 
+h4{
+    position: absolute;
+    color: #000000;
+    opacity: 70%;
+    font-size: 290px;
+    z-index: 10;
+    font-family: 'Lato', sans-serif ;
+}
 
+
+/* These styles are just to make it easier to see the blocks, initially. */
+:root{
+    --margin: 0px;
+}
+body { padding: 10px; }
+
+
+
+ul {
+	--columns: 1;
+
+	display: grid;
+	grid-template-columns: repeat(var(--columns), 1fr);
+    padding: -20px;
+}
 
 
 @media (min-width: 600px) {
-	ul { --columns: 3; }
+	ul { --columns: 10; }
+}
+
+.background{
+    background-color: rgb(255, 255, 255);
+    padding: var(--margin);
+    border-radius: 8px;
+}
+
+.image-block img {
+    filter: grayscale(100%);
+    filter: saturate(40%);
+    object-fit: cover;
+    object-position: top right;
+    width: 100%;
+    height: 600px;
+
+    border-radius: 8px;
+}
+
+.image-block img:hover{
+    transform: scaleX(-1);
+}
+
+::marker{
+    opacity: 0;
+}
+
+//
+a { color: blue; }
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+body,
+section,
+ul,
+figure {
+	display: grid;
+	gap: 2em;
 }
 
